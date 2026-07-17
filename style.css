@@ -190,3 +190,100 @@ footer{display:flex;justify-content:space-between;gap:20px;padding:28px clamp(22
   outline-offset: 6px;
   border-radius: 8px;
 }
+/* Header navigation and Instagram */
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+.instagram-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.instagram-link svg {
+  width: 28px;
+  height: 28px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.instagram-link .instagram-dot {
+  fill: currentColor;
+  stroke: none;
+}
+
+.header-instagram {
+  flex: 0 0 auto;
+  width: 42px;
+  height: 42px;
+  color: var(--ink);
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  background: white;
+  transition:
+    color 0.2s ease,
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.header-instagram:hover {
+  color: white;
+  background: var(--coral);
+  transform: translateY(-2px);
+}
+
+.header-instagram:focus-visible,
+.contact-instagram:focus-visible {
+  outline: 3px solid var(--coral);
+  outline-offset: 4px;
+}
+
+/* Instagram link beneath contact details */
+
+.contact-instagram {
+  gap: 11px;
+  margin-top: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  border-bottom: 0 !important;
+}
+
+.contact-instagram svg {
+  width: 32px;
+  height: 32px;
+}
+
+.contact-instagram:hover {
+  color: var(--coral);
+}
+
+/* Mobile header */
+
+@media (max-width: 900px) {
+  .header-right {
+    gap: 12px;
+  }
+
+  .header-right nav {
+    right: 65px;
+  }
+
+  .header-instagram {
+    width: 38px;
+    height: 38px;
+  }
+
+  .header-instagram svg {
+    width: 24px;
+    height: 24px;
+  }
+}

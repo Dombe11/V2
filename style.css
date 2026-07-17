@@ -297,3 +297,43 @@ footer{display:flex;justify-content:space-between;gap:20px;padding:28px clamp(22
 .contact-instagram i {
   font-size: 32px;
 }
+/* Final Instagram text-link styling */
+
+.header-instagram {
+  width: auto;
+  height: auto;
+  padding: 0;
+  color: inherit;
+  background: none;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.header-instagram:hover {
+  color: inherit;
+  background: none;
+  transform: none;
+  border-bottom: 2px solid var(--coral);
+}
+
+.contact-instagram {
+  display: inline-block;
+  width: auto;
+  color: inherit;
+  background: none;
+  border: 0;
+  border-radius: 0;
+  font: 500 clamp(1.25rem, 2vw, 2rem) Georgia, serif;
+  text-decoration: none;
+  border-bottom: 2px solid var(--coral) !important;
+}
+
+.contact-instagram:hover {
+  color: var(--coral);
+}

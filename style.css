@@ -280,7 +280,20 @@ footer{display:flex;justify-content:space-between;gap:20px;padding:28px clamp(22
 .header-instagram i {
   font-size: 26px;
 }
+.header-insta {
+  color: inherit;
+}
 
+.contact-insta {
+  font: 500 clamp(1.25rem, 2vw, 2rem) Georgia, serif;
+  text-decoration: none;
+  border-bottom: 2px solid var(--coral);
+}
+
+.contact-insta:hover,
+.header-insta:hover {
+  color: var(--coral);
+}
 .contact-instagram i {
   font-size: 32px;
 }

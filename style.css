@@ -277,3 +277,10 @@ footer{display:flex;justify-content:space-between;gap:20px;padding:28px clamp(22
 .contact-instagram .instagram-symbol {
   font-size: 34px;
 }
+.header-instagram i {
+  font-size: 26px;
+}
+
+.contact-instagram i {
+  font-size: 32px;
+}

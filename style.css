@@ -205,21 +205,6 @@ footer{display:flex;justify-content:space-between;gap:20px;padding:28px clamp(22
   text-decoration: none;
 }
 
-.instagram-link svg {
-  width: 28px;
-  height: 28px;
-  fill: none;
-  stroke: currentColor;
-  stroke-width: 1.8;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-}
-
-.instagram-link .instagram-dot {
-  fill: currentColor;
-  stroke: none;
-}
-
 .header-instagram {
   flex: 0 0 auto;
   width: 42px;
@@ -257,10 +242,6 @@ footer{display:flex;justify-content:space-between;gap:20px;padding:28px clamp(22
   border-bottom: 0 !important;
 }
 
-.contact-instagram svg {
-  width: 32px;
-  height: 32px;
-}
 
 .contact-instagram:hover {
   color: var(--coral);
@@ -282,8 +263,17 @@ footer{display:flex;justify-content:space-between;gap:20px;padding:28px clamp(22
     height: 38px;
   }
 
-  .header-instagram svg {
-    width: 24px;
-    height: 24px;
-  }
+
+}
+.header-instagram span,
+.instagram-symbol {
+  display: inline-block;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  line-height: 1;
+  font-weight: 400;
+}
+
+.contact-instagram .instagram-symbol {
+  font-size: 34px;
 }
